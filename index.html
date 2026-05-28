@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MedSyn</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f8fafc;
+      color: #111827;
+      line-height: 1.6;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    header {
+      padding: 24px 0;
+      background: white;
+      border-bottom: 1px solid #e5e7eb;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #dc2626;
+    }
+
+    .hero {
+      padding: 100px 0 80px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3.5rem;
+      font-weight: 700;
+      margin-bottom: 24px;
+      color: #111827;
+    }
+
+    .hero p {
+      max-width: 850px;
+      margin: auto;
+      font-size: 1.2rem;
+      color: #4b5563;
+    }
+
+    .hero-buttons {
+      margin-top: 40px;
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 14px 28px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.2s ease;
+    }
+
+    .btn-primary {
+      background: #dc2626;
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background: #b91c1c;
+    }
+
+    .btn-secondary {
+      background: white;
+      color: #111827;
+      border: 1px solid #d1d5db;
+    }
+
+    .section {
+      padding: 80px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .section-title h2 {
+      font-size: 2.4rem;
+      margin-bottom: 16px;
+    }
+
+    .section-title p {
+      color: #6b7280;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 28px;
+    }
+
+    .card {
+      background: white;
+      padding: 32px;
+      border-radius: 20px;
+      border: 1px solid #e5e7eb;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.04);
+    }
+
+    .card h3 {
+      margin-bottom: 16px;
+      color: #111827;
+    }
+
+    .card p {
+      color: #6b7280;
+    }
+
+    .workflow {
+      background: white;
+      border-radius: 24px;
+      padding: 50px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+      border: 1px solid #e5e7eb;
+    }
+
+    .workflow-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 24px;
+      margin-top: 40px;
+    }
+
+    .workflow-step {
+      background: #f9fafb;
+      padding: 24px;
+      border-radius: 16px;
+      border: 1px solid #e5e7eb;
+    }
+
+    .workflow-step span {
+      display: inline-block;
+      width: 36px;
+      height: 36px;
+      background: #dc2626;
+      color: white;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 36px;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+
+    footer {
+      padding: 40px 0;
+      text-align: center;
+      color: #6b7280;
+      border-top: 1px solid #e5e7eb;
+      background: white;
+      margin-top: 60px;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+
+      .workflow {
+        padding: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <nav>
+      <div class="logo">MedSyn</div>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <h1>AI-Assisted Clinical Evidence Intelligence</h1>
+    <p>
+      MedSyn is an AI-assisted platform designed to help clinicians and researchers stay current with rapidly evolving medical literature through structured evidence analysis, specialty-focused discovery, and emerging research intelligence.
+    </p>
+
+    <div class="hero-buttons">
+      <a href="#features" class="btn btn-primary">Explore Features</a>
+      <a href="mailto:hello@medsyn.ai" class="btn btn-secondary">Contact</a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="features">
+  <div class="container">
+    <div class="section-title">
+      <h2>Platform Vision</h2>
+      <p>
+        MedSyn aims to streamline clinical evidence discovery and help users navigate information overload within modern medical research.
+      </p>
+    </div>
+
+    <div class="features">
+      <div class="card">
+        <h3>Specialty-Focused Evidence Feeds</h3>
+        <p>
+          Personalized daily updates tailored to the clinician or researcher’s subspecialty and areas of interest.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Structured Evidence Analysis</h3>
+        <p>
+          AI-assisted summaries focused on study design, limitations, outcomes, and clinical implications.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Emerging Research Trends</h3>
+        <p>
+          Identification of rapidly growing research topics and shifts in scientific attention across specialties.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Hypothesis-Oriented Discovery</h3>
+        <p>
+          Exploratory workflows enabling researchers to investigate evidence related to specific research questions or hypotheses.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Weekly Audio Briefings</h3>
+        <p>
+          AI-generated audio briefings designed for passive learning during commutes and downtime.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Research Intelligence Layer</h3>
+        <p>
+          Long-term vision for longitudinal evidence monitoring and scientific trend surveillance.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="workflow">
+      <div class="section-title">
+        <h2>How MedSyn Works</h2>
+        <p>
+          An AI-assisted workflow designed to simplify literature discovery and evidence monitoring.
+        </p>
+      </div>
+
+      <div class="workflow-grid">
+        <div class="workflow-step">
+          <span>1</span>
+          <h3>Literature Collection</h3>
+          <p>
+            New medical research is continuously identified and organized by specialty and topic.
+          </p>
+        </div>
+
+        <div class="workflow-step">
+          <span>2</span>
+          <h3>AI-Assisted Analysis</h3>
+          <p>
+            Research papers undergo structured evidence interpretation and summarization.
+          </p>
+        </div>
+
+        <div class="workflow-step">
+          <span>3</span>
+          <h3>Personalized Delivery</h3>
+          <p>
+            Users receive specialty-focused updates and emerging trend notifications.
+          </p>
+        </div>
+
+        <div class="workflow-step">
+          <span>4</span>
+          <h3>Continuous Monitoring</h3>
+          <p>
+            Longitudinal tracking helps users stay synchronized with evolving medical evidence.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>© 2026 MedSyn. Early-stage AI-assisted clinical evidence platform.</p>
+    <p style="margin-top:10px;">Contact: hello@medsyn.ai</p>
+  </div>
+</footer>
+
+</body>
+</html>
